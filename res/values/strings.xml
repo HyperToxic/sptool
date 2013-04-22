@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SpTools</string>
+    <string name="action_settings">Settings</string>
+    <string name="warning1">1，软件会申请部分权限;</string>
+    <string name="warning2">2，不会对您的设备造成伤害;</string>
+    <string name="warning3">3，使用前务必阅读本声明;</string>
+    <string name="warning4">4，若因其他因素造成损失;</string>
+    <string name="warning5">5，本人概不负责;</string>
+    <string name="warning6">6，新浪@guohow开发制作,谢使用!</string>
+  
+</resources>

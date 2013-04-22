@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="top_bar_text_color">#ffffffff</color>
+    <color name="white">#FFFFFF</color><!--白色 -->  
+    
+    <color name="registration_background_color">#ff000000</color>
+    <color name="registration_text_color">#ffffffff</color>
+    <color name="registration_divider_color">#ff313131</color>
+    <color name="profile_background_color">#ff000000</color>
+    <color name="invite_background_color">#ff000000</color>
+    <color name="top_button_text_color">#ff616161</color>
+    <color name="conversations_divider_color">#ffbcbcbc</color>
+    <color name="chat_list_background_color">#ffffffff</color>
+    <color name="chat_list_header_background_color">#ff111111</color>
+    <color name="chat_background_color">#ffd9e5e7</color>
+    <color name="chat_date_separator_color">#ffffffff</color>
+    <color name="conversation_name_color">#ff000000</color>
+    <color name="conversation_name_selected_color">#ff000000</color>
+    <color name="conversation_timestamp_color">#ff62ad02</color>
+    <color name="conversation_timestamp_selected_color">#ff000000</color>
+    <color name="conversation_lastmsg_color">#ff494949</color>
+    <color name="conversation_lastmsg_selected_color">#ff000000</color>
+    <color name="profile_text_color">#ffffffff</color>
+    <color name="shadow_color">#ff292929</color>
+    <color name="contact_number_color">#ff616161</color>
+    <color name="contacts_list_shadow_color">#ff999999</color>
+</resources>

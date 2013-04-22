@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_vertical"
+   
+    android:background="@drawable/welcome_background_tile" >
+
+    <ImageView
+        android:id="@+id/sa_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/intro_screen_graphics" />
+
+    <TextView
+        android:id="@+id/login_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/settings_divider"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:text="重启选项："
+        android:textColor="#ff000000"
+        android:textSize="14.0dip"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/header_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-1.0dip"
+        android:src="@drawable/settings_divider_arrow" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_arrow"
+        android:fillViewport="true" >
+
+        <LinearLayout
+          
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/recovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/bg_next"
+                android:text="重启到recovery"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+               <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+             
+                 <Button
+                 android:id="@+id/bootloader"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="8.0dip"
+                 android:background="@drawable/bg_next"
+                 android:text="重启到bootloader"
+                 android:textColor="#ffffff"
+                 android:textSize="18.0dip"
+                 android:textStyle="bold" />
+                 
+                 <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+             
+                 <Button
+                     android:id="@+id/reboot"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="8.0dip"
+                     android:background="@drawable/bg_next"
+                     android:text="正常重启"
+                     android:textColor="#ffffff"
+                     android:textSize="18.0dip"
+                     android:textStyle="bold" />
+                 
+                 <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+             
+                 <Button
+                     android:id="@+id/powerOff"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="8.0dip"
+                     android:background="@drawable/bg_next"
+                     android:text="关机"
+                     android:textColor="#ffffff"
+                     android:textSize="18.0dip"
+                     android:textStyle="bold" />
+                  <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+                 
+                 <Button
+                     android:id="@+id/lock"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="8.0dip"
+                     android:background="@drawable/bg_next"
+                     android:text="锁屏"
+                     android:textColor="#ffffff"
+                     android:textSize="18.0dip"
+                     android:textStyle="bold" />
+                 
+                 <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+             
+                 <Button
+                     android:id="@+id/help2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="8.0dip"
+                     android:background="@drawable/bg_next"
+                     android:text="帮助"
+                     android:textColor="#ffffff"
+                     android:textSize="18.0dip"
+                     android:textStyle="bold" />
+                 
+                      <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+           
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

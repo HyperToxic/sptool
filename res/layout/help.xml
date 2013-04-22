@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/confirm_dialog_bg2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="5dp"
+        android:text="帮助"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="  认识android包含的内容主要是了解android的起源，设计原理，机器的启动过程等，建议了解这些知识；  认识刷机主要介绍root、recovery、bootloader的含义，刷各个分区的通用方法，以及完整刷机的种类和步骤；  认识apps主要针对反编译以及美化，修改系统资源为主，简单的涉及到app的优化，odex等；  高级选项主要包括各个重启选项，帮助你快速进入某种模式；  此为帮助信息。"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="33dp" >
+    </LinearLayout>
+
+</LinearLayout>
