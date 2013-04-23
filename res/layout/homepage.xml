@@ -21,7 +21,7 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="都有这些："
+        android:text="主页面"
         android:textColor="#ff000000"
         android:textSize="14.0dip"
         android:textStyle="italic" />
@@ -106,7 +106,7 @@
                      android:layout_height="wrap_content"
                      android:layout_margin="8.0dip"
                      android:background="@drawable/bg_next"
-                     android:text="高级选项"
+                     android:text="重启选项"
                      android:textColor="#ffffff"
                      android:textSize="18.0dip"
                      android:textStyle="bold" />
@@ -119,12 +119,12 @@
                 android:src="@drawable/separator" />
              
                  <Button
-                     android:id="@+id/help"
+                     android:id="@+id/myPhone"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
                      android:layout_margin="8.0dip"
                      android:background="@drawable/bg_next"
-                     android:text="帮助"
+                     android:text="我的设备"
                      android:textColor="#ffffff"
                      android:textSize="18.0dip"
                      android:textStyle="bold" />
@@ -135,6 +135,7 @@
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
+                    
            
         </LinearLayout>
     </ScrollView>

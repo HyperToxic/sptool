@@ -11,6 +11,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -39,20 +41,6 @@ public class spare extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN); //
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.spare);
-
-		final Button bn5 = (Button) findViewById(R.id.help2);
-
-		bn5.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View source) {
-				Intent intent = new Intent();
-
-				intent.setClass(spare.this, help2.class);
-				startActivity(intent);
-
-			}
-		});
 
 		recovery = (Button) findViewById(R.id.recovery);
 		bootloader = (Button) findViewById(R.id.bootloader);
@@ -128,6 +116,22 @@ public class spare extends Activity {
 		} catch (Throwable e) {
 			Log.e(TAG, "Lock screen failed!", e);
 		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		super.onCreateOptionsMenu(menu);
+
+		// MenuItem settings = menu.add("…Ë÷√"); settings.setIntent(new
+		// Intent(this,
+		// settingsActivity.class));
+		// return super.onCreateOptionsMenu(menu);
+
+		MenuItem about = menu.add("∞Ô÷˙");
+		about.setIntent(new Intent(this, help2.class));
+
+		return true;
 	}
 
 }

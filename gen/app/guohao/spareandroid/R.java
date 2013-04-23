@@ -66,32 +66,41 @@ public final class R {
         public static final int welcome_background_tile=0x7f02000c;
     }
     public static final class id {
+        public static final int Max=0x7f0b000b;
+        public static final int Min=0x7f0b000c;
         public static final int aboutApk=0x7f0b0007;
         public static final int aboutRom=0x7f0b0006;
-        public static final int action_settings=0x7f0b0011;
-        public static final int bootloader=0x7f0b000a;
-        public static final int code=0x7f0b000e;
+        public static final int action_settings=0x7f0b0019;
+        public static final int bootloader=0x7f0b0012;
+        public static final int code=0x7f0b0016;
+        public static final int cpuName=0x7f0b000a;
+        public static final int dis=0x7f0b000d;
+        public static final int fac=0x7f0b000e;
         public static final int gettingStart=0x7f0b0005;
         public static final int header_arrow=0x7f0b0004;
         public static final int help=0x7f0b0000;
         public static final int help2=0x7f0b0001;
-        public static final int lock=0x7f0b000d;
-        public static final int login=0x7f0b000f;
+        public static final int kernel=0x7f0b000f;
+        public static final int lock=0x7f0b0015;
+        public static final int login=0x7f0b0017;
         public static final int login_header=0x7f0b0003;
-        public static final int powerOff=0x7f0b000c;
-        public static final int reboot=0x7f0b000b;
-        public static final int recovery=0x7f0b0009;
+        public static final int myPhone=0x7f0b0009;
+        public static final int powerOff=0x7f0b0014;
+        public static final int reboot=0x7f0b0013;
+        public static final int recovery=0x7f0b0011;
+        public static final int rel=0x7f0b0010;
         public static final int sa_banner=0x7f0b0002;
         public static final int spareParts=0x7f0b0008;
-        public static final int splash=0x7f0b0010;
+        public static final int splash=0x7f0b0018;
     }
     public static final class layout {
         public static final int help=0x7f030000;
         public static final int help2=0x7f030001;
         public static final int homepage=0x7f030002;
-        public static final int spare=0x7f030003;
-        public static final int warning=0x7f030004;
-        public static final int welcome=0x7f030005;
+        public static final int phone=0x7f030003;
+        public static final int spare=0x7f030004;
+        public static final int warning=0x7f030005;
+        public static final int welcome=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;

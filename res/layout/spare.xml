@@ -25,7 +25,7 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="重启选项："
+        android:text="需要root授权"
         android:textColor="#ff000000"
         android:textSize="14.0dip"
         android:textStyle="italic" />
@@ -140,23 +140,7 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
              
-                 <Button
-                     android:id="@+id/help2"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:layout_margin="8.0dip"
-                     android:background="@drawable/bg_next"
-                     android:text="帮助"
-                     android:textColor="#ffffff"
-                     android:textSize="18.0dip"
-                     android:textStyle="bold" />
                  
-                      <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10.0dip"
-                android:scaleType="fitXY"
-                android:src="@drawable/separator" />
            
         </LinearLayout>
     </ScrollView>

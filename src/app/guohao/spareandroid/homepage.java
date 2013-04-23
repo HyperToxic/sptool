@@ -3,6 +3,8 @@ package app.guohao.spareandroid;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -29,9 +31,20 @@ public class homepage extends Activity {
 		final Button bn = (Button) findViewById(R.id.gettingStart);
 		final Button bn2 = (Button) findViewById(R.id.aboutRom);
 		final Button bn3 = (Button) findViewById(R.id.aboutApk);
-
+		final Button bn5 = (Button) findViewById(R.id.myPhone);
 		final Button bn4 = (Button) findViewById(R.id.spareParts);
-		final Button bn5 = (Button) findViewById(R.id.help);
+
+		bn5.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View source) {
+				Intent intent = new Intent();
+
+				intent.setClass(homepage.this, phone.class);
+				startActivity(intent);
+
+			}
+		});
 
 		bn4.setOnClickListener(new OnClickListener() {
 
@@ -45,36 +58,22 @@ public class homepage extends Activity {
 			}
 		});
 
-		bn5.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View source) {
-				Intent intent = new Intent();
-
-				intent.setClass(homepage.this, help.class);
-				startActivity(intent);
-
-			}
-		});
 	}
 
-	/*
-	 * public boolean onCreateOptionsMenu(Menu menu) {
-	 * 
-	 * super.onCreateOptionsMenu(menu);
-	 * 
-	 * MenuItem settings = menu.add("设置"); settings.setIntent(new Intent(this,
-	 * settingsActivity.class)); // return super.onCreateOptionsMenu(menu);
-	 * 
-	 * MenuItem about = menu.add("关于"); about.setIntent(new Intent(this,
-	 * aboutActivity.class));
-	 * 
-	 * 
-	 * 
-	 * MenuItem quit = menu.add("退出"); quit.setIntent(new Intent(this,
-	 * aboutActivity.class));
-	 * 
-	 * return true; }
-	 */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		super.onCreateOptionsMenu(menu);
+
+		// MenuItem settings = menu.add("设置"); settings.setIntent(new
+		// Intent(this,
+		// settingsActivity.class));
+		// return super.onCreateOptionsMenu(menu);
+
+		MenuItem about = menu.add("帮助");
+		about.setIntent(new Intent(this, help.class));
+
+		return true;
+	}
 
 }

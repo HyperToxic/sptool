@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/welcome_background_tile" >
+
+    <ImageView
+        android:id="@+id/sa_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/intro_screen_graphics" />
+
+    <TextView
+        android:id="@+id/login_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/settings_divider"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:text="设备信息"
+        android:textColor="#ff000000"
+        android:textSize="14.0dip"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/header_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-1.0dip"
+        android:src="@drawable/settings_divider_arrow" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_arrow"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.0dip"
+                android:text="硬件"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/cpuName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:hint="cpu型号"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+                />
+
+            <EditText
+                android:id="@+id/Max"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:hint="CPU最大频率"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+               />
+
+            <EditText
+                android:id="@+id/Min"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:hint="CPU最小频率"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+                />
+            
+             <EditText
+                android:id="@+id/dis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:hint="型号"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+                 />
+             
+             <EditText
+                android:id="@+id/fac"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:hint="厂商"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+                 />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.0dip"
+                android:text="系统"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/kernel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:hint="内核版本"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+                 />
+
+            <EditText
+                android:id="@+id/rel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:hint="系统版本"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+                 />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
