@@ -8,10 +8,13 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StatFs;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
@@ -281,6 +284,20 @@ public class phone extends Activity {
 
 	}
 
-	// 重写toString（）
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		super.onCreateOptionsMenu(menu);
+
+		// MenuItem settings = menu.add("设置"); settings.setIntent(new
+		// Intent(this,
+		// settingsActivity.class));
+		// return super.onCreateOptionsMenu(menu);
+
+		MenuItem about = menu.add("提示");
+		about.setIntent(new Intent(this, help3.class));
+
+		return true;
+	}
 
 }

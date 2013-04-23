@@ -21,7 +21,7 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="主页面"
+        android:text="正在努力root..."
         android:textColor="#ff000000"
         android:textSize="14.0dip"
         android:textStyle="italic" />
@@ -46,18 +46,45 @@
             android:layout_height="fill_parent"
             android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/learn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8.0dip"
-                android:background="@drawable/bg_next"
-                android:text="知识学堂"
-                android:textColor="#ffffff"
-                android:textSize="18.0dip"
-                android:textStyle="bold" />
-
             <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+            <TextView
+                android:id="@+id/warn_root"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:text="该功能并不能保证会成功;"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="16.0dip"
+                android:textStyle="bold" />
+            
+              <TextView
+                android:id="@+id/warn_root"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16.0dip"
+                android:layout_weight="0.00"
+                android:background="@drawable/text_bg"
+                android:text="若失败请往论坛寻root方法;"
+                android:inputType="number"
+                android:textColor="#ffffffff"
+                android:textSize="16.0dip"
+                android:textStyle="bold" />
+            
+                <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+                    <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
@@ -65,59 +92,18 @@
                 android:src="@drawable/separator" />
 
             <Button
-                android:id="@+id/spareParts"
+                android:id="@+id/root"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/bg_next"
-                android:text="重启选项"
+                android:text="开始root"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10.0dip"
-                android:scaleType="fitXY"
-                android:src="@drawable/separator" />
-
-            <Button
-                android:id="@+id/nutter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8.0dip"
-                android:background="@drawable/bg_next"
-                android:text="暴徒模式"
-                android:textColor="#ffffff"
-                android:textSize="18.0dip"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10.0dip"
-                android:scaleType="fitXY"
-                android:src="@drawable/separator" />
-
-            <Button
-                android:id="@+id/myPhone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8.0dip"
-                android:background="@drawable/bg_next"
-                android:text="我的设备"
-                android:textColor="#ffffff"
-                android:textSize="18.0dip"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10.0dip"
-                android:scaleType="fitXY"
-                android:src="@drawable/separator" />
+          
         </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>

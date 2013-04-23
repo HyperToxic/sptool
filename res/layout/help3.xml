@@ -1,5 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/help"
+    android:id="@+id/help3"
     android:layout_width="280dp"
     android:layout_height="wrap_content"
     android:background="@drawable/confirm_dialog_bg2"
@@ -21,9 +21,9 @@
         android:layout_marginTop="1dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="  知识学堂选项主要带你认识android的一些发烧知识，初步了解android；  重启选项包括各个重启选项，帮助你快速进入某种模式；  此为帮助信息。"
+        android:text="  帮助你获取设备的部分信息，支持diy，你懂得..."
         android:textColor="#ffffff"
-        android:textSize="14sp" />
+        android:textSize="13sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"

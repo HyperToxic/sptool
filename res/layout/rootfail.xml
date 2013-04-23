@@ -1,5 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/help"
+    android:id="@+id/rootfail"
     android:layout_width="280dp"
     android:layout_height="wrap_content"
     android:background="@drawable/confirm_dialog_bg2"
@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:padding="5dp"
-        android:text="帮助"
+        android:text="Oops  :()"
         android:textColor="#ffffff"
         android:textSize="15sp" />
 
@@ -21,9 +21,9 @@
         android:layout_marginTop="1dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="  知识学堂选项主要带你认识android的一些发烧知识，初步了解android；  重启选项包括各个重启选项，帮助你快速进入某种模式；  此为帮助信息。"
-        android:textColor="#ffffff"
-        android:textSize="14sp" />
+           android:text="  看起来好像败在开头了，您的设备已经root或者本选项在开玩笑，抱歉我们会抓紧完善您的设备支持的！"
+        android:textColor="#cc0033"
+        android:textSize="13sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"

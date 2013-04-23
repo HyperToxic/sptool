@@ -2,7 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/welcome_background_tile" >
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/welcome_background_tile"
+    android:gravity="center_vertical" >
 
     <ImageView
         android:id="@+id/sa_banner"
@@ -21,7 +24,7 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="主页面"
+        android:text="学习一下"
         android:textColor="#ff000000"
         android:textSize="14.0dip"
         android:textStyle="italic" />
@@ -47,12 +50,12 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/learn"
+                android:id="@+id/android"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/bg_next"
-                android:text="知识学堂"
+                android:text="认识android"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
@@ -65,12 +68,12 @@
                 android:src="@drawable/separator" />
 
             <Button
-                android:id="@+id/spareParts"
+                android:id="@+id/flash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/bg_next"
-                android:text="重启选项"
+                android:text="认识刷机"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
@@ -83,30 +86,12 @@
                 android:src="@drawable/separator" />
 
             <Button
-                android:id="@+id/nutter"
+                android:id="@+id/apk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/bg_next"
-                android:text="暴徒模式"
-                android:textColor="#ffffff"
-                android:textSize="18.0dip"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10.0dip"
-                android:scaleType="fitXY"
-                android:src="@drawable/separator" />
-
-            <Button
-                android:id="@+id/myPhone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8.0dip"
-                android:background="@drawable/bg_next"
-                android:text="我的设备"
+                android:text="认识apk"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />

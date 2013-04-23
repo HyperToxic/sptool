@@ -28,11 +28,35 @@ public class homepage extends Activity {
 
 		setContentView(R.layout.homepage);
 		// 下一步按钮
-		final Button bn = (Button) findViewById(R.id.gettingStart);
-		final Button bn2 = (Button) findViewById(R.id.aboutRom);
-		final Button bn3 = (Button) findViewById(R.id.aboutApk);
+
+		final Button bn2 = (Button) findViewById(R.id.learn);
+		final Button bn3 = (Button) findViewById(R.id.nutter);
 		final Button bn5 = (Button) findViewById(R.id.myPhone);
 		final Button bn4 = (Button) findViewById(R.id.spareParts);
+
+		bn2.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View source) {
+				Intent intent = new Intent();
+
+				intent.setClass(homepage.this, learn.class);
+				startActivity(intent);
+
+			}
+		});
+
+		bn3.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View source) {
+				Intent intent = new Intent();
+
+				intent.setClass(homepage.this, nutter.class);
+				startActivity(intent);
+
+			}
+		});
 
 		bn5.setOnClickListener(new OnClickListener() {
 

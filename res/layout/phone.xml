@@ -70,10 +70,8 @@
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:hint="cpu型号"
-                android:inputType="number"
                 android:textColor="#ffffffff"
-                android:textSize="12.0dip"
-                />
+                android:textSize="12.0dip" />
 
             <EditText
                 android:id="@+id/Max"
@@ -85,8 +83,7 @@
                 android:hint="CPU最大频率"
                 android:inputType="number"
                 android:textColor="#ffffffff"
-                android:textSize="12.0dip"
-               />
+                android:textSize="12.0dip" />
 
             <EditText
                 android:id="@+id/Min"
@@ -98,10 +95,9 @@
                 android:hint="CPU最小频率"
                 android:inputType="number"
                 android:textColor="#ffffffff"
-                android:textSize="12.0dip"
-                />
-            
-             <EditText
+                android:textSize="12.0dip" />
+
+            <EditText
                 android:id="@+id/dis"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -109,12 +105,10 @@
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:hint="型号"
-                android:inputType="number"
                 android:textColor="#ffffffff"
-                android:textSize="12.0dip"
-                 />
-             
-             <EditText
+                android:textSize="12.0dip" />
+
+            <EditText
                 android:id="@+id/fac"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -122,10 +116,8 @@
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:hint="厂商"
-                android:inputType="number"
                 android:textColor="#ffffffff"
-                android:textSize="12.0dip"
-                 />
+                android:textSize="12.0dip" />
 
             <ImageView
                 android:layout_width="fill_parent"
@@ -151,10 +143,8 @@
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:hint="内核版本"
-                android:inputType="number"
                 android:textColor="#ffffffff"
-                android:textSize="12.0dip"
-                 />
+                android:textSize="12.0dip" />
 
             <EditText
                 android:id="@+id/rel"
@@ -164,10 +154,8 @@
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:hint="系统版本"
-                android:inputType="number"
                 android:textColor="#ffffffff"
-                android:textSize="12.0dip"
-                 />
+                android:textSize="12.0dip" />
 
             <ImageView
                 android:layout_width="fill_parent"

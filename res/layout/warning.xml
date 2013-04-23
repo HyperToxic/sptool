@@ -21,7 +21,7 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="welcome"
+        android:text="welcome to NutterTools"
         android:textColor="#ff000000"
         android:textSize="14.0dip"
         android:textStyle="italic" />
