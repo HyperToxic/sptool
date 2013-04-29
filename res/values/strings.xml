@@ -2,12 +2,18 @@
 <resources>
 
     <string name="app_name">Nutter</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Nutter</string>
     <string name="warning1"> * 软件会申请部分权限;</string>
     <string name="warning2"> * 不会对您的设备造成伤害;</string>
     <string name="warning3"> * 使用前务必阅读本声明;</string>
     <string name="warning4"> * 若因其他因素造成损失;</string>
     <string name="warning5"> * 本团队概不负责;</string>
     <string name="warning6"> * @guohow@教主慕慕开发制作;</string>
-  
+    <string name="update_log_1"></string>
+    <string name="update_log_2"></string>
+    <string name="update_log_3"></string>
+    <string name="update_log_4"></string>
+    <string name="update_log_5"></string>
+    <string name="contact_dev"></string>
+
 </resources>

@@ -1,8 +1,6 @@
 package app.guohao.spareandroid;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -46,11 +44,12 @@ public class MainActivity extends Activity {
 		image.setImageResource(images[0]);
 		image.setOnClickListener(new OnClickListener() {
 
+			@Override
 			public void onClick(View v) {
 			}
 		});
 
-	if (file.exists()) {
+		if (file.exists()) {
 			final Intent intent = new Intent();
 
 			intent.setClass(MainActivity.this, homepage.class);
@@ -60,12 +59,11 @@ public class MainActivity extends Activity {
 				public void run() {
 					startActivity(intent); // 执行
 					MainActivity.this.finish();
-				
+
 				}
 			};
-			timer.schedule(task, 1000 * 2); // 2秒后
+			timer.schedule(task, 1000 * 1); // 2秒后
 
-		
 		} else {
 
 			final Intent intent = new Intent();
@@ -78,7 +76,7 @@ public class MainActivity extends Activity {
 				public void run() {
 					startActivity(intent); // 执行
 					MainActivity.this.finish();
-				
+
 				}
 			};
 			timer.schedule(task, 1000 * 2); // 2秒后

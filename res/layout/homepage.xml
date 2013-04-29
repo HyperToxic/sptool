@@ -110,6 +110,22 @@
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
+             <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+            <Button
+                android:id="@+id/ROMinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/bg_next"
+                android:text="ROM信息"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="fill_parent"

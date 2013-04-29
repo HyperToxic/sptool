@@ -13,8 +13,6 @@ import android.widget.Button;
 
 public class homepage extends Activity {
 
-	// Button bn;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,6 +31,7 @@ public class homepage extends Activity {
 		final Button bn3 = (Button) findViewById(R.id.nutter);
 		final Button bn5 = (Button) findViewById(R.id.myPhone);
 		final Button bn4 = (Button) findViewById(R.id.spareParts);
+		final Button bn6 = (Button) findViewById(R.id.ROMinfo);
 
 		bn2.setOnClickListener(new OnClickListener() {
 
@@ -77,6 +76,18 @@ public class homepage extends Activity {
 				Intent intent = new Intent();
 
 				intent.setClass(homepage.this, spare.class);
+				startActivity(intent);
+
+			}
+		});
+
+		bn6.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View source) {
+				Intent intent = new Intent();
+
+				intent.setClass(homepage.this, ROMinfo.class);
 				startActivity(intent);
 
 			}
