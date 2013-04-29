@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\javaProject\\SpareAndroid\\src\\android\\app\\admin\\IDevicePolicyManager.aidl
+ * Original file: D:\\javaProject\\NutterTools\\src\\android\\app\\admin\\IDevicePolicyManager.aidl
  */
 package android.app.admin;
 /**

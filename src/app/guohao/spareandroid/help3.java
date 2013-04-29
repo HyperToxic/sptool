@@ -16,6 +16,7 @@ public class help3 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.help3);
 		layout = (LinearLayout) findViewById(R.id.help3);
+
 		layout.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -33,3 +34,6 @@ public class help3 extends Activity {
 	}
 
 }
+
+
+
