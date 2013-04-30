@@ -28,8 +28,8 @@ public class nutter extends Activity {
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		// 设置全屏
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+		//		WindowManager.LayoutParams.FLAG_FULLSCREEN); //
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.nutter);
 		// 弹出提问窗口

@@ -9,11 +9,120 @@
     <string name="warning4"> * 若因其他因素造成损失;</string>
     <string name="warning5"> * 本团队概不负责;</string>
     <string name="warning6"> * @guohow@教主慕慕开发制作;</string>
-    <string name="update_log_1"></string>
-    <string name="update_log_2"></string>
-    <string name="update_log_3"></string>
-    <string name="update_log_4"></string>
-    <string name="update_log_5"></string>
-    <string name="contact_dev"></string>
+    <string name="update_log_1">更新日志1</string>
+    <string name="update_log_2">更新日志2</string>
+    <string name="update_log_3">更新日志3</string>
+    <string name="update_log_4">更新日志4</string>
+    <string name="update_log_5">更新日志5</string>
+    <string name="contact_dev">联系方式</string>
+    <string name="ver">版本号</string>
+    <string name="auther">作者</string>
+    <string name="bbs">社区</string>
+    <string name="flashfail">	   *刷机失败：\n
+	   \n
+       1; ROM包有问题：\n
+	   检查刷机包是否自己做过改动，比如是否含有中文或者空格文件；是否被解压过；是否用普通记事本修改过刷机脚本；是否复制到SD时没有复制完整；是否下载正确；ROMer是否可靠等；\n
+	   2; REC有问题：\n
+	   检查rec版本，是否是官方rec；是否刷入了最新的rec等；\n
+	   3; 操作问题：\n
+	   是否清空了数据，是否格式化了某个分区，通常是没有按照教程步骤正确操作；\n
+	   \n
+	   *怎么解决：\n
+	   \n
+	   1; 检查好各个步骤，重新刷，前提是机器能正确开机刷机等；\n
+	   2; 机器无法开机了，但是能进recovery：\n
+	   此时需要用rec里面的挂载和存储选项，找到挂载SD卡选项，即可在打开U盘模式，可将刷机包复制到SD卡重新刷机；\n
+	   3; 机器无法进入recovery，按了开机键屏幕没有任何反应：\n
+	   建议不要做任何操作了，联系售后吧 :( \n
+	   \n
+	   \n
+	   \n
+	   \n
+	   PS: 大家可以微博上@guohow 描述出现的问题，只要我知道的一定回答 :)
+	   \n</string>
+    <string name="beauty">        *美化：
+        \n
+        \n
+        图标级别：\n
+        图标替换是最简单的美化方式，不需要任何的技术基础；只要安装好了 压缩软件即可操作，需要操作的apk（以android4.1为例子）主要是framework-res.apk和SystemUI.apk；\n
+        以修改系统信号图标为例子：\n
+        1，首先打开刷机包里面的SYSTEM/APP文件夹，找到SystemUI.apk 拖到桌面准备修改；\n
+        2，用压缩软件打开apk，找到res/drawable-xxhdpi(如果是1080P对应的就是xxhdpi，720p--xhdpi，其他的一般不低于800*480--hdpi)；拖到桌面；\n
+        3，找到信号图标，看看是什么名字，然后将自己喜欢的图片改成相同的名字，覆盖掉之前的图片；\n
+        4 ，将res\drawable-hdpi拖回原来的apk，直接在压缩软件里操作即可，不要解压操作~\n
+        5，刷机之前只需要将修改过的apk覆盖掉原来的apk即可！\n
+        代码级别：\n
+        在本教程之前要先学习“反编译apk”教程；\n
+        主要介绍一下android里面各个文件的作用，所以你可以找到相关的文件去修改美化\n
+        1，res/layout/**.xml:  这个目录下面的xml文件是布局文件，android以xml作为布局文件，想要修改需要一定的基础哦；
+        2，res/values/下面的xml文件是android定义的各种数值、资源文件；\n
+        其中arrays是各种数组，一般不要修改它，colors.xml是android颜色定义文件，你可以修改掉颜色代码，至于代码可以百度android的RGB代码，达到修改全局颜色的目的；\n
+        dimens.xml是管大小尺寸的，比如你要修改虚拟按键的高度，找到framework-res.apk下面的dimens.xml文件，找到nav-bar的定义，调整数值即可；\n
+        string.xml是字符串资源，打开看看你就知道这个管理了app或者系统的文字部分，你可以修改掉，比如电量过低的提示，你可以找到原来的文字，修改成麻痹没电了...；\n
+        style.xml是修改的时候用得最多的文件，一般定义者各个布局的主题，位置，颜色等比较综合的文件，需要慢慢学习~ \n
+        \n
+        \n
+        PS：以上不是教大家怎么去修改，而是指出了大体方向，让大家明白个大概，知道怎么去下手，具体的实例教程论坛会有很多。也可以@guohow去微博提问我；\n</string>
+    <string name="battery">*电量校准：\n
+        
+        \n
+        刷完机之后电量通常会不准确，或者充不满，有一个解决办法可以参考试试；
+        进入recovery模式。可以用本工具的重启选项，找到advanced（高级)选项，找到 清除电池信息（clear battery status）选项，操作即可。</string>
+    <string name="innerapk">*内置apk：\n
+        
+        \n
+        如果你喜欢把某个apk变成系统内置apk，以防止被恶意卸载等，你可以如下操作：\n
+        1，修改你的apk名字，只要不含中文，空格即可；\n
+        2，压缩软件打开apk，看看根目录是否含有lib文件夹，有的话继续第三步，否则直接第四步\n
+        3，打开lib文件夹，移植打开直到没有文件夹，你会看到lib***.so文件，也就是说你要把所有的so文件提取出来，（同名的话只需要提取任何一个）
+        提取出来放到system/lib下面即可；\n
+        4，将apk放大system/app下面，要直接在压缩软件中操作，不要将ROM解压！\n
+        5，刷机即可 ！\n
+        \n
+        \n
+        PS：也可以在手机中如上操作，原理一样，知识要记得修改权限，目的是让你移动进来的文件权限和其他本来就内置的文件权限一样！</string>
+    <string name="delinner">*精简系统：\n
+     \n
+     如果你下载了某个ROMer的刷机包，总体满意，但是你不喜欢内置的一些自带或者第三方apps，你可以
+     自己动手删除掉；原理和内置apps类似： \n
+     1,打开system/app找到你要删除的apk，用压缩软件打开；\n
+     2,看看是否有lib文件夹，如果有，继续第三步，否则直接第四步；\n
+     3,打开lib文件夹，找到所有lib***.so文件，记住名字，然后跳转到system/lib下看看找到同名字的lib文件，并删除；\n
+     4,删除该apk即可！\n
+    \n
+    \n
+    \n
+    PS： 建议不要删除某些系统通讯相关的app，否则系统不稳定！</string>
+    <string name="makerec">*反编译apk：\n
+        \n
+        
+        工具下载：\n
+     
+ 
+在http://code.google.com/p/android-apktool/下 载获得，apktool-1.0.0.tar.bz2和apktool-install-windows-2.1_r01-1.zip两个包都要下。\n
+ 
+步骤：\n
+
+ 
+1.解压缩下载的两个文件包，apktool-install-windows-2.1_r01-1.zip解压缩后得到的包
+里有aapt.exe 和apktool.bat.（注意要把apktool-1.0.0.tar.bz2解压后的一个.jar 文件copy进来）\n
+ 
+2.打开命令窗口 （开始 > 运行，输入cmd，回车。）进入到apktool.bat的文件夹里。\n
+ 
+          输入：\n
+ 
+                    apktool d xx.apk  (可以将apk放大工具目录) \n
+ 
+（命令行解释：apktool d 要反编译的文件 输出文件夹）\n
+ 
+特别注意：apk不要含有中文、空格，\n
+ 
+3.打开 C:\***文件夹 就可以得到我们学院的各种资源了。\n
+
+4.将反编译完的文件重新打包成apk: \n
+ 
+ 很简单，只要输入：\n
+ 
+     apktood b c:***文件夹（你编译出来文件夹）\n</string>
 
 </resources>

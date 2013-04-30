@@ -21,7 +21,7 @@
         android:layout_marginTop="1dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="  知识学堂选项主要带你认识android的一些发烧知识，初步了解android；  重启选项包括各个重启选项，帮助你快速进入某种模式； 暴徒模式为开发者选项，谨慎使用； 我的设备帮你快速定位您的机器信息，支持DIY，你懂得； ROM信息主要是方便开发者宣传自己的ROM，使用者联系开发者等； 此为帮助信息。"
+        android:text="  自我诊断选项主要带你认识android的一些发烧知识，初步了解android；  重启选项包括各个重启选项，帮助你快速进入某种模式； 暴徒模式为开发者选项，谨慎使用； 我的设备帮你快速定位您的机器信息，支持DIY，你懂得； ROM信息主要是方便开发者宣传自己的ROM，使用者联系开发者等； 此为帮助信息。"
         android:textColor="#ffffff"
         android:textSize="14sp" />
 

@@ -37,8 +37,8 @@ public class spare extends Activity {
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		// …Ë÷√»´∆¡
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+	//	getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+		//		WindowManager.LayoutParams.FLAG_FULLSCREEN); //
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.spare);
 
@@ -46,7 +46,7 @@ public class spare extends Activity {
 		bootloader = (Button) findViewById(R.id.bootloader);
 		shutdown = (Button) findViewById(R.id.powerOff);
 		reboot = (Button) findViewById(R.id.reboot);
-		lock = (Button) findViewById(R.id.lock);
+
 		if (shutdown != null) {
 			shutdown.setOnClickListener(new OnClickListener() {
 				@Override
@@ -80,14 +80,7 @@ public class spare extends Activity {
 				}
 			});
 		}
-		if (lock != null) {
-			lock.setOnClickListener(new OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					lock();
-				}
-			});
-		}
+
 	}
 
 	// À¯∆¡

@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/bg_next"
-                android:text="知识学堂"
+                android:text="自我诊断"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />

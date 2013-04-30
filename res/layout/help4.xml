@@ -21,7 +21,7 @@
         android:layout_marginTop="1dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="  认识android主要涉及android的基础知识包括运行原理，组成等等;  认识刷机侧重于recovery、bootloader的刷写介绍，以及刷完整ROM，单包升级等的介绍；  认识apk则侧重于反编译apk实现系统美化，系统优化，修改局部细节等的基本知识，请慢慢阅读学习！"
+        android:text="    不会的可以@guohow 联系我，请慢慢阅读学习！"
         android:textColor="#ffffff"
         android:textSize="13sp" />
 

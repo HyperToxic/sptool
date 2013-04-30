@@ -20,8 +20,8 @@ public class warning extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// …Ë÷√»´∆¡
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+		//		WindowManager.LayoutParams.FLAG_FULLSCREEN); //
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.warning);
 

@@ -44,8 +44,8 @@ public class phone extends Activity {
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		// …Ë÷√»´∆¡
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+			//	WindowManager.LayoutParams.FLAG_FULLSCREEN); //
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.phone);
 
