@@ -24,9 +24,9 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="学习一下"
+        android:text="自我诊断"
         android:textColor="#ff000000"
-        android:textSize="14.0dip"
+        android:textSize="13.0dip"
         android:textStyle="italic" />
 
     <ImageView
@@ -50,48 +50,67 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/android"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/flashfail"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
                 android:layout_margin="8.0dip"
-                android:background="@drawable/bg_next"
-                android:text="认识android"
+                android:background="@drawable/text_bg"
+                android:text="刷机失败"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip" 
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="8.0dip"
+               android:background="@drawable/text_bg"
+                android:text="电量不准"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10.0dip"
-                android:scaleType="fitXY"
-                android:src="@drawable/separator" />
-
             <Button
-                android:id="@+id/flash"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/delinner"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
                 android:layout_margin="8.0dip"
-                android:background="@drawable/bg_next"
-                android:text="认识刷机"
+                android:background="@drawable/text_bg"
+                android:text="如何精简"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10.0dip"
-                android:scaleType="fitXY"
-                android:src="@drawable/separator" />
+            <Button
+                android:id="@+id/beauty"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/text_bg"
+                android:text="美化ROM"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/apk"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/innerapk"
+               android:layout_width="match_parent"
+                android:layout_height="32dp"
                 android:layout_margin="8.0dip"
-                android:background="@drawable/bg_next"
-                android:text="认识apk"
+              android:background="@drawable/text_bg"
+                android:text="内置apk"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/makerec"
+               android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="8.0dip"
+               android:background="@drawable/text_bg"
+                android:text="反编译apk"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
@@ -103,6 +122,7 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
         </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>

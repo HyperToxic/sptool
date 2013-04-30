@@ -46,7 +46,7 @@ public class spare extends Activity {
 		bootloader = (Button) findViewById(R.id.bootloader);
 		shutdown = (Button) findViewById(R.id.powerOff);
 		reboot = (Button) findViewById(R.id.reboot);
-		lock = (Button) findViewById(R.id.lock);
+
 		if (shutdown != null) {
 			shutdown.setOnClickListener(new OnClickListener() {
 				@Override
@@ -80,14 +80,7 @@ public class spare extends Activity {
 				}
 			});
 		}
-		if (lock != null) {
-			lock.setOnClickListener(new OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					lock();
-				}
-			});
-		}
+
 	}
 
 	// ËøÆÁ

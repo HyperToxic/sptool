@@ -29,7 +29,7 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="ROM_info"
+        android:text="ROM信息"
         android:textColor="#ff000000"
         android:textSize="14.0dip"
         android:textStyle="italic" />
@@ -63,25 +63,27 @@
                 android:textSize="14.0dip"
                 android:textStyle="italic" />
 
-            <EditText
-                android:id="@+id/cpuName"
+            <TextView
+                android:id="@+id/auther"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:inputType="text"
+                android:text="@string/auther"
                 android:textColor="#ffffffff"
                 android:textSize="12.0dip" />
 
-            <EditText
-                android:id="@+id/Max"
+            <TextView
+                android:id="@+id/bbs"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:inputType="number|text"
+                android:text="@string/bbs"
                 android:textColor="#ffffffff"
                 android:textSize="12.0dip" />
             <TextView
@@ -93,14 +95,15 @@
                 android:textSize="14.0dip"
                 android:textStyle="italic" />
 
-            <EditText
-                android:id="@+id/Min"
+            <TextView
+                android:id="@+id/ver"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
                 android:inputType="number"
+                android:text="@string/ver"
                 android:textColor="#ffffffff"
                 android:textSize="12.0dip" />
 
@@ -113,7 +116,7 @@
                 android:textSize="14.0dip"
                 android:textStyle="italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/kernel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -126,7 +129,7 @@
                 android:textColor="#ffffffff"
                 android:textSize="12.0dip" />
 
-            <EditText
+            <TextView
                 android:id="@+id/rel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -139,7 +142,7 @@
                 android:textColor="#ffffffff"
                 android:textSize="12.0dip" />
 
-            <EditText
+            <TextView
                 android:id="@+id/rel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -152,7 +155,7 @@
                 android:textColor="#ffffffff"
                 android:textSize="12.0dip" />
 
-            <EditText
+            <TextView
                 android:id="@+id/rel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -165,7 +168,7 @@
                 android:textColor="#ffffffff"
                 android:textSize="12.0dip" />
 
-            <EditText
+            <TextView
                 android:id="@+id/rel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -187,7 +190,7 @@
                 android:textSize="14.0dip"
                 android:textStyle="italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/kernel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
