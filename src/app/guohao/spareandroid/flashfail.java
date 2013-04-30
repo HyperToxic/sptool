@@ -14,8 +14,13 @@ public class flashfail extends Activity {
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
+<<<<<<< HEAD
 	//	getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 	//			WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+=======
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+>>>>>>> 6577b7355655d50f19bcdfff9aeea512498d68b9
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.flashfail);
 	}
