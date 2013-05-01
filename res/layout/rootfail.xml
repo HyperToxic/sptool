@@ -21,7 +21,7 @@
         android:layout_marginTop="1dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-           android:text="  看起来好像败在开头了，您的设备已经root或者本选项在开玩笑，抱歉我们会抓紧完善您的设备支持的！"
+        android:text="  看起来好像败在开头了，您的设备已经root或者本选项在开玩笑，抱歉我们会抓紧完善您的设备支持的！"
         android:textColor="#cc0033"
         android:textSize="13sp" />
 

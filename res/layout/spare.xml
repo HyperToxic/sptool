@@ -2,11 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_centerVertical="true"
     android:layout_centerHorizontal="true"
-    android:gravity="center_vertical"
-   
-    android:background="@drawable/welcome_background_tile" >
+    android:layout_centerVertical="true"
+    android:background="@drawable/welcome_background_tile"
+    android:gravity="center_vertical" >
 
     <ImageView
         android:id="@+id/sa_banner"
@@ -46,9 +45,8 @@
         android:fillViewport="true" >
 
         <LinearLayout
-          
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
+            android:layout_height="fill_parent"
             android:orientation="vertical" >
 
             <Button
@@ -62,77 +60,73 @@
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
 
-               <ImageView
+            <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
-             
-                 <Button
-                 android:id="@+id/bootloader"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_margin="8.0dip"
-                 android:background="@drawable/bg_next"
-                 android:text="重启到bootloader"
-                 android:textColor="#ffffff"
-                 android:textSize="18.0dip"
-                 android:textStyle="bold" />
-                 
-                 <ImageView
+
+            <Button
+                android:id="@+id/bootloader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/bg_next"
+                android:text="重启到bootloader"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
-             
-                 <Button
-                     android:id="@+id/reboot"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:layout_margin="8.0dip"
-                     android:background="@drawable/bg_next"
-                     android:text="正常重启"
-                     android:textColor="#ffffff"
-                     android:textSize="18.0dip"
-                     android:textStyle="bold" />
-                 
-                 <ImageView
+
+            <Button
+                android:id="@+id/reboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/bg_next"
+                android:text="正常重启"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
-             
-                 <Button
-                     android:id="@+id/powerOff"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:layout_margin="8.0dip"
-                     android:background="@drawable/bg_next"
-                     android:text="关机"
-                     android:textColor="#ffffff"
-                     android:textSize="18.0dip"
-                     android:textStyle="bold" />
-                  <ImageView
+
+            <Button
+                android:id="@+id/powerOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/bg_next"
+                android:text="关机"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
-                 
-             
-                 
-                 <ImageView
+
+            <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
-             
-                 
-           
         </LinearLayout>
     </ScrollView>
 

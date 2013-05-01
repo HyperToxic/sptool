@@ -24,15 +24,13 @@ public class nutter extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// 禁止输入法自动弹出
+		
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-		// 设置全屏
-		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-		//		WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.nutter);
-		// 弹出提问窗口
+	
 		Intent intent = new Intent();
 		intent.setClass(nutter.this, help5.class);// 4
 		startActivity(intent);
@@ -62,12 +60,9 @@ public class nutter extends Activity {
 
 		super.onCreateOptionsMenu(menu);
 
-		// MenuItem settings = menu.add("设置"); settings.setIntent(new
-		// Intent(this,
-		// settingsActivity.class));
-		// return super.onCreateOptionsMenu(menu);
+		
 
-		MenuItem about = menu.add("帮助");
+		MenuItem about = menu.add("甯姪");
 		about.setIntent(new Intent(this, help2.class));
 
 		return true;

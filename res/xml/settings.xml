@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="Settings" >
-    <PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"  
-        android:title="显示"
-        android:summary="显示设置">  
 
-    <CheckBoxPreference
-        android:defaultValue="true"
-      
-        android:summaryOff="关"
-        android:summaryOn="开"
-        android:title="全屏" >
-    </CheckBoxPreference>
-</PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:summary="显示设置"
+        android:title="显示" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:summaryOff="关"
+            android:summaryOn="开"
+            android:title="全屏" >
+        </CheckBoxPreference>
+    </PreferenceScreen>
+
 </PreferenceScreen>

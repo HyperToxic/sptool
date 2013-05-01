@@ -59,8 +59,8 @@
                 android:paddingLeft="15.0dip"
                 android:text="readme"
                 android:textColor="#ffffffff"
-                 android:textStyle="italic" 
-                android:textSize="14.0dip" />
+                android:textSize="14.0dip"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/code"
@@ -69,11 +69,12 @@
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
+                android:inputType="number"
                 android:text="@string/warning1"
-                android:inputType="number"
                 android:textColor="#ffffffff"
                 android:textSize="14.0dip"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/code"
                 android:layout_width="fill_parent"
@@ -81,11 +82,12 @@
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
+                android:inputType="number"
                 android:text="@string/warning2"
-                android:inputType="number"
                 android:textColor="#ffffffff"
                 android:textSize="14.0dip"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/code"
                 android:layout_width="fill_parent"
@@ -93,11 +95,12 @@
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
+                android:inputType="number"
                 android:text="@string/warning3"
-                android:inputType="number"
                 android:textColor="#ffffffff"
                 android:textSize="14.0dip"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/code"
                 android:layout_width="fill_parent"
@@ -105,11 +108,12 @@
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
+                android:inputType="number"
                 android:text="@string/warning4"
-                android:inputType="number"
                 android:textColor="#ffffffff"
                 android:textSize="14.0dip"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/code"
                 android:layout_width="fill_parent"
@@ -117,12 +121,12 @@
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
+                android:inputType="number"
                 android:text="@string/warning5"
-                android:inputType="number"
                 android:textColor="#ffffffff"
                 android:textSize="14.0dip"
                 android:textStyle="bold" />
-            
+
             <TextView
                 android:id="@+id/code"
                 android:layout_width="fill_parent"
@@ -130,8 +134,8 @@
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
-                android:text="@string/warning6"
                 android:inputType="number"
+                android:text="@string/warning6"
                 android:textColor="#ffffffff"
                 android:textSize="14.0dip"
                 android:textStyle="bold" />
@@ -153,9 +157,7 @@
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
-
         </LinearLayout>
-
     </ScrollView>
 
 </RelativeLayout>

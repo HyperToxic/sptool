@@ -40,12 +40,10 @@ public class phone extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// ½ûÖ¹ÊäÈë·¨×Ô¶¯µ¯³ö
+		
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-		// ÉèÖÃÈ«ÆÁ
-		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-			//	WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+	
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.phone);
 
@@ -58,15 +56,15 @@ public class phone extends Activity {
 		kernel = (EditText) findViewById(R.id.kernel);
 		rel = (EditText) findViewById(R.id.rel);
 
-		cfreMax.setText("*×î´óÆµÂÊ£º" + MAX);
-		cfreMin.setText("*×îĞ¡ÆµÂÊ£º" + MIN);
-		display.setText("*Éè±¸ĞÍºÅ£º" + DISPLAY);
-		fac.setText("*ÖÆÔì³§¼Ò£º" + FAC);
+		cfreMax.setText("*æœ€å¤§é¢‘ç‡:   " + MAX);
+		cfreMin.setText("*æœ€å°é¢‘ç‡:   " + MIN);
+		display.setText("*æœºå™¨å‹å·:   " + DISPLAY);
+		fac.setText("*åˆ¶é€ å‚å•†:   " + FAC);
 
 		// rom.setText("*" + ROM.toString());
-		kernel.setText("*ÄÚºË°æ±¾£º" + SYSTEM[0]);
-		rel.setText("*ÏµÍ³°æ±¾£º" + SYSTEM[1]);
-		cname.setText("*´¦ÀíÆ÷£º" + cpuName);
+		kernel.setText("*å†…æ ¸ç‰ˆæœ¬:   " + SYSTEM[0]);
+		rel.setText("*ç³»ç»Ÿç‰ˆæœ¬:   " + SYSTEM[1]);
+		cname.setText("*å¤„ç†å™¨:   " + cpuName);
 
 		/*
 		 * final Button bn = (Button) findViewById(R.id.login);
@@ -238,11 +236,7 @@ public class phone extends Activity {
 
 	}
 
-	// »ñÈ¡CPU×î´óÆµÂÊ£¨µ¥Î»KHZ£©
-
-	// "/system/bin/cat" ÃüÁîĞĞ
-
-	// "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq" ´æ´¢×î´óÆµÂÊµÄÎÄ¼şµÄÂ·¾¶
+	
 
 	public static String getMaxCpuFreq() {
 
@@ -289,12 +283,8 @@ public class phone extends Activity {
 
 		super.onCreateOptionsMenu(menu);
 
-		// MenuItem settings = menu.add("ÉèÖÃ"); settings.setIntent(new
-		// Intent(this,
-		// settingsActivity.class));
-		// return super.onCreateOptionsMenu(menu);
-
-		MenuItem about = menu.add("ÌáÊ¾");
+		
+		MenuItem about = menu.add("å¸®åŠ©");
 		about.setIntent(new Intent(this, help3.class));
 
 		return true;

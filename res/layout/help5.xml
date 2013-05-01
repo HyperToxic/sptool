@@ -21,7 +21,7 @@
         android:layout_marginTop="1dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-           android:text="  本选项组涉及到的工具请谨慎使用，否则可能造成系统不稳定，新手请勿使用！"
+        android:text="  本选项组涉及到的工具请谨慎使用，否则可能造成系统不稳定，新手请勿使用！"
         android:textColor="#ffffff"
         android:textSize="13sp" />
 

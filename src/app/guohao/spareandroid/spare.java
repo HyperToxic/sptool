@@ -33,12 +33,10 @@ public class spare extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// 禁止输入法自动弹出
+		
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-		// 设置全屏
-	//	getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-		//		WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+	
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.spare);
 
@@ -83,27 +81,27 @@ public class spare extends Activity {
 
 	}
 
-	// 锁屏
+	
 	public void lock() {
 		try {
-			// 通过反射获取到sdk隐藏的服务
+			
 			Method method = Class.forName("android.os.ServiceManager")
 					.getMethod("getService", String.class);
-			IBinder binder = (IBinder) method.invoke(null,// 激活服务
+			IBinder binder = (IBinder) method.invoke(null,
 					new Object[] { Context.DEVICE_POLICY_SERVICE });
 			service = IDevicePolicyManager.Stub.asInterface(binder);
-			// 定义组件的名字
+			
 			ComponentName mAdminName = new ComponentName(this,
 					MainActivity.class);
-			// 注册权限
+			
 			if (service != null) {
-				// 注册成deviceadmin的权限
+				
 				Intent intent = new Intent(
 						DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
 				intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN,
 						mAdminName);
 				startActivity(intent);
-				// 调用服务实现锁屏
+				
 				service.lockNow();
 			}
 		} catch (Throwable e) {
@@ -116,12 +114,9 @@ public class spare extends Activity {
 
 		super.onCreateOptionsMenu(menu);
 
-		// MenuItem settings = menu.add("设置"); settings.setIntent(new
-		// Intent(this,
-		// settingsActivity.class));
-		// return super.onCreateOptionsMenu(menu);
+		
 
-		MenuItem about = menu.add("帮助");
+		MenuItem about = menu.add("甯姪");
 		about.setIntent(new Intent(this, help2.class));
 
 		return true;

@@ -24,20 +24,20 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// 全屏
+	
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		//
+		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.welcome);
-		// 判断是否存在该路径
+		
 		String appHome = Environment.getExternalStorageDirectory()
 				.getAbsolutePath() + "/guohow_Soft";
 		final String subPath = appHome + "/NutterTools";
 		final File file = new File(subPath);
 
-		// 设置欢迎界面，简单的imageView
+		
 		LinearLayout main = (LinearLayout) findViewById(R.id.splash);
 		final ImageView image = new ImageView(this);
 		main.addView(image);
@@ -57,12 +57,12 @@ public class MainActivity extends Activity {
 			TimerTask task = new TimerTask() {
 				@Override
 				public void run() {
-					startActivity(intent); // 执行
+					startActivity(intent); 
 					MainActivity.this.finish();
 
 				}
 			};
-			timer.schedule(task, 1000 * 1); // 2秒后
+			timer.schedule(task, 1000 * 1); 
 
 		} else {
 
@@ -74,12 +74,12 @@ public class MainActivity extends Activity {
 			TimerTask task = new TimerTask() {
 				@Override
 				public void run() {
-					startActivity(intent); // 执行
+					startActivity(intent); 
 					MainActivity.this.finish();
 
 				}
 			};
-			timer.schedule(task, 1000 * 2); // 2秒后
+			timer.schedule(task, 1000 * 2); 
 
 		}
 	}

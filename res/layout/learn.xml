@@ -50,34 +50,23 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/flashfail"
+                android:id="@+id/question"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/text_bg"
-                android:text="刷机失败"
-                android:textColor="#ffffff"
-                android:textSize="18.0dip" 
-                android:textStyle="bold"/>
-
-            <Button
-                android:id="@+id/battery"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:layout_margin="8.0dip"
-               android:background="@drawable/text_bg"
-                android:text="电量不准"
+                android:text="问题解救"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/delinner"
+                android:id="@+id/diy"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/text_bg"
-                android:text="如何精简"
+                android:text="自助服务"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
@@ -88,29 +77,40 @@
                 android:layout_height="32dp"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/text_bg"
-                android:text="美化ROM"
+                android:text="美化学习"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/innerapk"
-               android:layout_width="match_parent"
+                android:id="@+id/compile"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_margin="8.0dip"
-              android:background="@drawable/text_bg"
-                android:text="内置apk"
+                android:background="@drawable/text_bg"
+                android:text="编译学习"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/makerec"
-               android:layout_width="match_parent"
+                android:id="@+id/others"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_margin="8.0dip"
-               android:background="@drawable/text_bg"
-                android:text="反编译apk"
+                android:background="@drawable/text_bg"
+                android:text="乱七八糟"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/text_bg"
+                android:text="网站推荐"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
@@ -122,7 +122,6 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
         </LinearLayout>
-
     </ScrollView>
 
 </RelativeLayout>

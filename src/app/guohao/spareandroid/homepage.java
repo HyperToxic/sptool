@@ -16,18 +16,15 @@ public class homepage extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// 禁止输入法自动弹出
+		
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-		// 设置全屏
-		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-			//	WindowManager.LayoutParams.FLAG_FULLSCREEN); //
+		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
 
 		setContentView(R.layout.homepage);
-		// 下一步按钮
-
+		
 		final Button bn2 = (Button) findViewById(R.id.learn);
 		final Button bn3 = (Button) findViewById(R.id.nutter);
 		final Button bn5 = (Button) findViewById(R.id.myPhone);
@@ -101,12 +98,9 @@ public class homepage extends Activity {
 
 		super.onCreateOptionsMenu(menu);
 
-		// MenuItem settings = menu.add("设置"); settings.setIntent(new
-		// Intent(this,
-		// settingsActivity.class));
-		// return super.onCreateOptionsMenu(menu);
+		
 
-		MenuItem about = menu.add("帮助");
+		MenuItem about = menu.add("甯姪");
 		about.setIntent(new Intent(this, help.class));
 
 		return true;

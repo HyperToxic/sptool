@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="top_bar_text_color">#ffffffff</color>
-    <color name="white">#FFFFFF</color><!--白色 -->  
-    
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+
     <color name="registration_background_color">#ff000000</color>
     <color name="registration_text_color">#ffffffff</color>
     <color name="registration_divider_color">#ff313131</color>
@@ -24,4 +25,5 @@
     <color name="shadow_color">#ff292929</color>
     <color name="contact_number_color">#ff616161</color>
     <color name="contacts_list_shadow_color">#ff999999</color>
+
 </resources>

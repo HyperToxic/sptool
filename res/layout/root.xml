@@ -52,6 +52,7 @@
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
+
             <TextView
                 android:id="@+id/warn_root"
                 android:layout_width="fill_parent"
@@ -59,32 +60,33 @@
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
-                android:text="该功能并不能保证会成功;"
                 android:inputType="number"
+                android:text="该功能并不能保证会成功;"
                 android:textColor="#ffffffff"
                 android:textSize="16.0dip"
                 android:textStyle="bold" />
-            
-              <TextView
+
+            <TextView
                 android:id="@+id/warn_root"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16.0dip"
                 android:layout_weight="0.00"
                 android:background="@drawable/text_bg"
-                android:text="若失败请往论坛寻root方法;"
                 android:inputType="number"
+                android:text="若失败请往论坛寻root方法;"
                 android:textColor="#ffffffff"
                 android:textSize="16.0dip"
                 android:textStyle="bold" />
-            
-                <ImageView
+
+            <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
                 android:scaleType="fitXY"
                 android:src="@drawable/separator" />
-                    <ImageView
+
+            <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dip"
@@ -101,9 +103,7 @@
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
-          
         </LinearLayout>
-
     </ScrollView>
 
 </RelativeLayout>

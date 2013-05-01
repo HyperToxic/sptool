@@ -14,12 +14,12 @@ import android.widget.Button;
 public class learn extends Activity {
 	private static final String TAG = "Switcher";
 
-	private Button flashfail;
-	private Button battery;
-	private Button delinner;
+	private Button question;
 	private Button beauty;
-	private Button innerapk;
-	private Button makerec;
+	private Button diy;
+	private Button compile;
+	private Button website;
+	private Button others;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,46 +27,16 @@ public class learn extends Activity {
 
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-
-<<<<<<< HEAD
-		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-		//		WindowManager.LayoutParams.FLAG_FULLSCREEN); //
-=======
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN); //
->>>>>>> 6577b7355655d50f19bcdfff9aeea512498d68b9
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.learn);
 
-		flashfail = (Button) findViewById(R.id.flashfail);
-		battery = (Button) findViewById(R.id.battery);
-		delinner = (Button) findViewById(R.id.delinner);
+		question = (Button) findViewById(R.id.question);
+		compile = (Button) findViewById(R.id.compile);
+		diy = (Button) findViewById(R.id.diy);
 		beauty = (Button) findViewById(R.id.beauty);
-		innerapk = (Button) findViewById(R.id.innerapk);
-		makerec = (Button) findViewById(R.id.makerec);
+		others = (Button) findViewById(R.id.others);
+		website = (Button) findViewById(R.id.website);
 
-		flashfail.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View source) {
-				Intent intent = new Intent();
-
-				intent.setClass(learn.this, flashfail.class);
-				startActivity(intent);
-
-			}
-		});
-		battery.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View source) {
-				Intent intent = new Intent();
-
-				intent.setClass(learn.this, battery.class);
-				startActivity(intent);
-
-			}
-		});
 		beauty.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -78,35 +48,57 @@ public class learn extends Activity {
 
 			}
 		});
-		innerapk.setOnClickListener(new OnClickListener() {
+		diy.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(learn.this, innerapk.class);
+				intent.setClass(learn.this, diy.class);
 				startActivity(intent);
 
 			}
 		});
-		delinner.setOnClickListener(new OnClickListener() {
+		question.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(learn.this, delinner.class);
+				intent.setClass(learn.this, question.class);
 				startActivity(intent);
 
 			}
 		});
-		makerec.setOnClickListener(new OnClickListener() {
+		compile.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(learn.this, makerec.class);
+				intent.setClass(learn.this, compile.class);
+				startActivity(intent);
+
+			}
+		});
+		website.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View source) {
+				Intent intent = new Intent();
+
+				intent.setClass(learn.this, website.class);
+				startActivity(intent);
+
+			}
+		});
+		others.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View source) {
+				Intent intent = new Intent();
+
+				intent.setClass(learn.this, others.class);
 				startActivity(intent);
 
 			}
@@ -118,7 +110,7 @@ public class learn extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		super.onCreateOptionsMenu(menu);
-		MenuItem about = menu.add("°ïÖú");
+		MenuItem about = menu.add("å¸®åŠ©");
 		about.setIntent(new Intent(this, help4.class));
 
 		return true;

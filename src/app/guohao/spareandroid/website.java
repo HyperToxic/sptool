@@ -11,17 +11,16 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-public class beauty extends Activity {
+public class website extends Activity {
 	private static final String TAG = "Switcher";
 
 	/*private Button question;
-	
+	private Button beauty;
 	private Button diy;
 	private Button compile;
 	private Button website;
 	private Button others;
 	*/
-	private Button beautyhow;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,35 +29,33 @@ public class beauty extends Activity {
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.beauty);
+		setContentView(R.layout.website);
 
-		beautyhow = (Button) findViewById(R.id.beautyhow);
-		
-		beautyhow.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View source) {
-				Intent intent = new Intent();
-
-				intent.setClass(beauty.this, beautyhow.class);
-				startActivity(intent);
-
-			}
-		});
-		/*compile = (Button) findViewById(R.id.compile);
+	/*	question = (Button) findViewById(R.id.question);
+		compile = (Button) findViewById(R.id.compile);
 		diy = (Button) findViewById(R.id.diy);
 		beauty = (Button) findViewById(R.id.beauty);
 		others = (Button) findViewById(R.id.others);
 		website = (Button) findViewById(R.id.website);
 
-		
+		beauty.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View source) {
+				Intent intent = new Intent();
+
+				intent.setClass(website.this, beauty.class);
+				startActivity(intent);
+
+			}
+		});
 		diy.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(beauty.this, diy.class);
+				intent.setClass(website.this, diy.class);
 				startActivity(intent);
 
 			}
@@ -69,7 +66,7 @@ public class beauty extends Activity {
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(beauty.this, question.class);
+				intent.setClass(website.this, question.class);
 				startActivity(intent);
 
 			}
@@ -80,7 +77,7 @@ public class beauty extends Activity {
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(beauty.this, compile.class);
+				intent.setClass(website.this, compile.class);
 				startActivity(intent);
 
 			}
@@ -91,24 +88,23 @@ public class beauty extends Activity {
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(beauty.this, website.class);
+				intent.setClass(website.this, website.class);
 				startActivity(intent);
 
 			}
 		});
-		
-		*/
-		beautyhow.setOnClickListener(new OnClickListener() {
+		others.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View source) {
 				Intent intent = new Intent();
 
-				intent.setClass(beauty.this, beautyhow.class);
+				intent.setClass(website.this, others.class);
 				startActivity(intent);
 
 			}
 		});
+		*/
 
 	}
 

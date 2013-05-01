@@ -24,7 +24,7 @@
         android:background="@drawable/settings_divider"
         android:gravity="center_vertical"
         android:paddingLeft="15.0dip"
-        android:text="美化"
+        android:text="各种纠结问题"
         android:textColor="#ff000000"
         android:textSize="13.0dip"
         android:textStyle="italic" />
@@ -50,12 +50,23 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/beautyhow"
+                android:id="@+id/flashfail"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_margin="8.0dip"
                 android:background="@drawable/text_bg"
-                android:text="基础知识"
+                android:text="刷机失败"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/text_bg"
+                android:text="电池不准"
                 android:textColor="#ffffff"
                 android:textSize="18.0dip"
                 android:textStyle="bold" />
