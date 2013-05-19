@@ -23,32 +23,12 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-	
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-
 		setContentView(R.layout.welcome);
-		
 		String appHome = Environment.getExternalStorageDirectory()
 				.getAbsolutePath() + "/guohow_Soft";
 		final String subPath = appHome + "/NutterTools";
 		final File file = new File(subPath);
-
-		
-		LinearLayout main = (LinearLayout) findViewById(R.id.splash);
-		final ImageView image = new ImageView(this);
-		main.addView(image);
-		image.setImageResource(images[0]);
-		image.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-			}
-		});
-
 		if (file.exists()) {
 			final Intent intent = new Intent();
 
@@ -57,12 +37,12 @@ public class MainActivity extends Activity {
 			TimerTask task = new TimerTask() {
 				@Override
 				public void run() {
-					startActivity(intent); 
+					startActivity(intent);
 					MainActivity.this.finish();
 
 				}
 			};
-			timer.schedule(task, 1000 * 1); 
+			timer.schedule(task, 1000 * 1);
 
 		} else {
 
@@ -74,12 +54,12 @@ public class MainActivity extends Activity {
 			TimerTask task = new TimerTask() {
 				@Override
 				public void run() {
-					startActivity(intent); 
+					startActivity(intent);
 					MainActivity.this.finish();
 
 				}
 			};
-			timer.schedule(task, 1000 * 2); 
+			timer.schedule(task, 1000 * 2);
 
 		}
 	}

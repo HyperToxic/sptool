@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:padding="5dp"
-        android:text="!!!小心前行!!!"
+        android:text="小心前行"
         android:textColor="#ffffff"
         android:textSize="15sp" />
 

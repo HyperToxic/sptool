@@ -25,5 +25,6 @@
     <color name="shadow_color">#ff292929</color>
     <color name="contact_number_color">#ff616161</color>
     <color name="contacts_list_shadow_color">#ff999999</color>
+    <color name="dark">#000000</color>
 
 </resources>

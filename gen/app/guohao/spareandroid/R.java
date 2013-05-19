@@ -27,6 +27,7 @@ public final class R {
         public static final int conversation_timestamp_color=0x7f06000f;
         public static final int conversation_timestamp_selected_color=0x7f060010;
         public static final int conversations_divider_color=0x7f060008;
+        public static final int dark=0x7f060017;
         public static final int invite_background_color=0x7f060006;
         public static final int profile_background_color=0x7f060005;
         public static final int profile_text_color=0x7f060013;

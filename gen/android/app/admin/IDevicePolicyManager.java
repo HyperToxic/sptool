@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/guohow/android/sptool/src/android/app/admin/IDevicePolicyManager.aidl
+ * Original file: /home/guohow/android/github/sptool/src/android/app/admin/IDevicePolicyManager.aidl
  */
 package android.app.admin;
 /**
